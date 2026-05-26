@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:133ea85b-212c-4b1c-823b-5966328977da",
+  "serialNumber": "urn:uuid:e5c536b2-51a1-444a-b6fa-eb9c245b5caa",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-05-21T10:42:11Z",
+    "timestamp": "2026-05-26T22:37:16Z",
     "tools": {
       "components": [
         {
@@ -56,7 +56,7 @@
           },
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.70.0-SNAPSHOT-f10fad5d3"
+          "version": "0.70.0-SNAPSHOT-8047ef359"
         }
       ]
     },
@@ -19421,7 +19421,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "73d4027c-a09f-4189-8fe9-ebbba54cb5cb",
+      "bom-ref": "8f4111f3-e6a2-4a40-9a34-db25ca2a7a79",
       "name": "package-lock.json",
       "properties": [
         {
@@ -23839,9 +23839,9 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/qs@6.14.2",
+      "bom-ref": "pkg:npm/qs@6.15.2",
       "name": "qs",
-      "version": "6.14.2",
+      "version": "6.15.2",
       "licenses": [
         {
           "license": {
@@ -23849,11 +23849,11 @@
           }
         }
       ],
-      "purl": "pkg:npm/qs@6.14.2",
+      "purl": "pkg:npm/qs@6.15.2",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgID",
-          "value": "qs@6.14.2"
+          "value": "qs@6.15.2"
         },
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -24480,7 +24480,7 @@
     },
     {
       "type": "application",
-      "bom-ref": "d30ebc21-8ca4-483d-a80e-6e80eb4bec19",
+      "bom-ref": "8a46f9e7-333c-4c16-a556-63dc2575cc06",
       "name": "/repo/webapps/frontend",
       "properties": [
         {
@@ -26865,7 +26865,13 @@
       "dependsOn": []
     },
     {
-      "ref": "73d4027c-a09f-4189-8fe9-ebbba54cb5cb",
+      "ref": "8a46f9e7-333c-4c16-a556-63dc2575cc06",
+      "dependsOn": [
+        "8f4111f3-e6a2-4a40-9a34-db25ca2a7a79"
+      ]
+    },
+    {
+      "ref": "8f4111f3-e6a2-4a40-9a34-db25ca2a7a79",
       "dependsOn": [
         "pkg:npm/%40bpmn-io/dmn-migrate@0.7.1",
         "pkg:npm/%40bpmn-io/form-js@1.21.3",
@@ -26912,12 +26918,6 @@
         "pkg:npm/requirejs-angular-define@1.1.0",
         "pkg:npm/requirejs@2.3.8",
         "pkg:npm/superagent@10.3.0"
-      ]
-    },
-    {
-      "ref": "d30ebc21-8ca4-483d-a80e-6e80eb4bec19",
-      "dependsOn": [
-        "73d4027c-a09f-4189-8fe9-ebbba54cb5cb"
       ]
     },
     {
@@ -28096,7 +28096,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:npm/qs@6.14.2",
+      "ref": "pkg:npm/qs@6.15.2",
       "dependsOn": [
         "pkg:npm/side-channel@1.1.0"
       ]
@@ -28192,7 +28192,7 @@
         "pkg:npm/formidable@3.5.4",
         "pkg:npm/methods@1.1.2",
         "pkg:npm/mime@2.6.0",
-        "pkg:npm/qs@6.14.2"
+        "pkg:npm/qs@6.15.2"
       ]
     },
     {
@@ -28842,15 +28842,6 @@
         },
         {
           "source": {
-            "name": "redhat"
-          },
-          "score": 7.5,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "source": {
             "name": "ubuntu"
           },
           "severity": "medium",
@@ -28864,9 +28855,6 @@
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-21490"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2024-21490"
         },
         {
           "url": "https://github.com/angular/angular.js"
@@ -29020,15 +29008,6 @@
         },
         {
           "source": {
-            "name": "redhat"
-          },
-          "score": 4.3,
-          "severity": "low",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
-        },
-        {
-          "source": {
             "name": "ubuntu"
           },
           "severity": "medium",
@@ -29042,9 +29021,6 @@
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-8372"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2024-8372"
         },
         {
           "url": "https://codepen.io/herodevs/full/xxoQRNL/0072e627abe03e9cda373bc75b4c1017"
@@ -29124,15 +29100,6 @@
         },
         {
           "source": {
-            "name": "redhat"
-          },
-          "score": 4.3,
-          "severity": "low",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
-        },
-        {
-          "source": {
             "name": "ubuntu"
           },
           "severity": "medium",
@@ -29146,9 +29113,6 @@
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2024-8373"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2024-8373"
         },
         {
           "url": "https://codepen.io/herodevs/full/bGPQgMp/8da9ce87e99403ee13a295c305ebfa0b"
@@ -29219,15 +29183,6 @@
         },
         {
           "source": {
-            "name": "redhat"
-          },
-          "score": 4.8,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
-        },
-        {
-          "source": {
             "name": "ubuntu"
           },
           "severity": "medium",
@@ -29241,9 +29196,6 @@
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2025-0716"
-        },
-        {
-          "url": "https://access.redhat.com/security/cve/CVE-2025-0716"
         },
         {
           "url": "https://codepen.io/herodevs/pen/qEWQmpd/a86a0d29310e12c7a3756768e6c7b915"
